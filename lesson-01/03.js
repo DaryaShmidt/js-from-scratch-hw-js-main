@@ -5,4 +5,12 @@
 */
 
 // your code
-let sum
+let sum = 0;
+let current = 0;
+
+while (current <= 20) {
+  if (current%2 === 1) {
+      sum = sum + current;
+  }
+  current++;
+}
