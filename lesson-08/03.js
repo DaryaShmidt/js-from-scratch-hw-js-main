@@ -10,5 +10,11 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  if(str.length > maxLength){
+    return str.substr(0, maxLength) + "...";
+  }else{
+    return str;
+  }
 }
+
+
