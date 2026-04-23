@@ -33,6 +33,10 @@ let isTimerStarted = false
 let timerId
 
 startButton.addEventListener('click', () => {
+  setTimeout(startTimer);
+})
+
+function startTimer () {
   if (isTimerStarted){
     return;
   }
@@ -48,7 +52,7 @@ startButton.addEventListener('click', () => {
     counter--;
     }
   }, 1000);
-})
+}
 
 cancelButton.addEventListener('click', () => {
   if (isTimerStarted){
